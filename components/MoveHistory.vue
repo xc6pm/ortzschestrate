@@ -21,7 +21,7 @@ const movePairs = computed(() =>
 
 <template>
   <ol>
-    <li v-for="pair in movePairs">
+    <li class="font-bold" style="color: #c3c2c1" v-for="pair in movePairs">
       {{ pair[0].toString() }}
       {{ pair.length === 2 ? " - " + pair[1].toString() : "" }}
     </li>
